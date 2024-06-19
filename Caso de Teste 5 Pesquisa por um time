@@ -1,0 +1,15 @@
+async function testSearchTeam() {
+    let driver = await new Builder().forBrowser('chrome').build();
+    try {
+        await driver.get('https://www.globoesporte.com');
+        let searchBox = await driver.findElement(By.name('q'));
+        await searchBox.sendKeys('Vasco', Key.RETURN);
+        await driver.wait(until.titleContains('Vasco'));
+        let title = await driver.getTitle();
+        console.log('Title after search:', title);
+    } finally {
+        await driver.quit();
+    }
+}
+
+testSearchTeam();
