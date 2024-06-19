@@ -1,0 +1,14 @@
+const { Builder, By, Key, until } = require('selenium-webdriver');
+
+async function testHomePageLoad() {
+    let driver = await new Builder().forBrowser('chrome').build();
+    try {
+        await driver.get('https://www.globoesporte.com');
+        let title = await driver.getTitle();
+        console.log('Title is:', title);        
+   } finally {
+        await driver.quit();
+    }
+}
+
+testHomePageLoad();
