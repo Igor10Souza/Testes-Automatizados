@@ -18,6 +18,8 @@ Ao acessar toda a página inicial, tenta localizar caso tenha alguma quebrada.
 
 Caso de Teste 5 Pesquisa por um time 
 
+ È a área de pesquisa que busca acessar o time esperado.
+
 
 
 
