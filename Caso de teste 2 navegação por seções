@@ -1,0 +1,15 @@
+async function testNavigation() {
+    let driver = await new Builder().forBrowser('chrome').build();
+    try {
+        await driver.get('https://www.globoesporte.com');
+        let noticiasLink = await driver.findElement(By.linkText('Notícias'));
+        await noticiasLink.click();
+        await driver.wait(until.titleContains('Notícias'));
+        let title = await driver.getTitle();
+        console.log('Title after navigation:', title);
+    } finally {
+        await driver.quit();
+    }
+}
+
+testNavigation();
