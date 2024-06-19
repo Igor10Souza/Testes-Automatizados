@@ -2,16 +2,13 @@ async function testLogin() {
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         await driver.get('https://www.globoesporte.com');
-        // Implementar interações para preencher formulário de login
         let usernameInput = await driver.findElement(By.name('username'));
         let passwordInput = await driver.findElement(By.name('password'));
         await usernameInput.sendKeys('seu_usuario');
         await passwordInput.sendKeys('sua_senha', Key.RETURN);
-        // Adicionar espera para redirecionamento e asserção para verificar a página de destino
         await driver.wait(until.titleContains('Minha Conta'));
         let title = await driver.getTitle();
         console.log('Title after login:', title);
-        // Adicionar asserção para verificar se o título contém 'Minha Conta'
     } finally {
         await driver.quit();
     }
