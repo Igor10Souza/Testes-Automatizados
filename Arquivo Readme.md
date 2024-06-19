@@ -10,6 +10,12 @@ Verifica se tanto o usuário e a senha foram digitadas corretamente.
 
 Caso de Teste 3 Navegação por seções
 
+Ao acessar o site busca mostrar todas as seções disponíveis de pesquisa
+
+Caso de Teste 4 Verificação das imagens quebradas
+
+
+
 
 
 
