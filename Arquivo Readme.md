@@ -10,9 +10,13 @@ Verifica se tanto o usuário e a senha foram digitadas corretamente.
 
 Caso de Teste 3 Navegação por seções
 
-Ao acessar o site busca mostrar todas as seções disponíveis de pesquisa
+Acessa o site somente por seções.
 
 Caso de Teste 4 Verificação das imagens quebradas
+
+Ao acessar toda a página inicial, tenta localizar caso tenha alguma quebrada.
+
+Caso de Teste 5 Pesquisa por um time 
 
 
 
